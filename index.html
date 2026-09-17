@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NOIR COFFEE — Главная</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="siteHeader">
+    <div class="container nav">
+      <a href="index.html" class="logo" id="logo">
+        <span class="logo-mark"></span>
+        <span id="logoText">NOIR COFFEE</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a class="nav-link" href="menu.html" data-nav="menu">Меню</a>
+        <a class="nav-link" href="about.html" data-nav="about">О нас</a>
+        <a class="nav-link" href="about.html#reviews" data-nav="reviews">Отзывы</a>
+        <a class="nav-link" href="about.html#contacts" data-nav="contacts">Контакты</a>
+        <button class="coffee-match-btn" id="openQuiz" type="button">☕ Подобрать кофе</button>
+        <button class="glitch-orb" id="glitchOrb" type="button" aria-label="Странный шарик">
+          <span class="orb-core"></span>
+        </button>
+        <a class="nav-cta" href="about.html#contacts">Забронировать</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+
+  <div class="backrooms-corridor" aria-hidden="true">
+    <div class="bg-layer bg-layer-1">
+      <img src="backrooms-1.jpg" alt="" data-t="1"
+        onerror="if(this.dataset.t==='1'){this.dataset.t='2';this.src='backrooms-1.png'}else if(this.dataset.t==='2'){this.dataset.t='3';this.src='backrooms-1.jpeg'}else if(this.dataset.t==='3'){this.dataset.t='4';this.src='backrooms-1.webp'}">
+    </div>
+    <div class="bg-layer bg-layer-2">
+      <img src="backrooms-2.png" alt="" data-t="1"
+        onerror="if(this.dataset.t==='1'){this.dataset.t='2';this.src='backrooms-2.jpg'}else if(this.dataset.t==='2'){this.dataset.t='3';this.src='backrooms-2.jpeg'}else if(this.dataset.t==='3'){this.dataset.t='4';this.src='backrooms-2.webp'}">
+    </div>
+  </div>
+
+  <div class="backrooms-flash" id="backroomsFlash" aria-hidden="true"></div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="eyebrow" id="heroEyebrow">кофе · десерты · атмосфера</div>
+          <h1 id="heroTitle">Тёмный кофе.<br><em>Тёплые</em> вечера.</h1>
+          <p class="hero-text" id="heroText">
+            Небольшая кофейня для тех, кто ценит хороший зерновой кофе,
+            спокойную музыку и место, где можно никуда не спешить.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="menu.html" id="heroBtnPrimary">Смотреть меню</a>
+            <a class="btn btn-secondary" href="about.html#contacts" id="heroBtnSecondary">Найти нас</a>
+          </div>
+          <div class="hero-note" id="heroNote">
+            <span>↓</span> Открыты каждый день · 08:00—23:00
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="features reveal" id="featuresStrip">
+          <article class="feature">
+            <div class="feature-number" data-feat-num>01 / ЗЕРНО</div>
+            <h3 data-feat-title>Свежая обжарка</h3>
+            <p data-feat-text>Небольшие партии и понятное происхождение зерна.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-number" data-feat-num>02 / КУХНЯ</div>
+            <h3 data-feat-title>Десерты рядом</h3>
+            <p data-feat-text>Готовим небольшими партиями специально для кофейни.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-number" data-feat-num>03 / МЕСТО</div>
+            <h3 data-feat-title>Тихий ритм</h3>
+            <p data-feat-text>Тёплый свет, музыка и розетки, чтобы задержаться.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo" id="footerLogo">NOIR COFFEE</div>
+          <div style="font-size:11px;margin-top:6px" id="footerTag">coffee / dessert / slow moments</div>
+        </div>
+        <div class="footer-note" id="footerNote">Одностраничный шаблон кофейни с интерактивным меню, подбором кофе и скрытой пасхалкой.</div>
+      </div>
+      <div class="footer-bottom">
+        <div id="footerCopy">© 2026 NOIR COFFEE</div>
+        <div id="footerTail">Сделано с любовью к кофе.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
